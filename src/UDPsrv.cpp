@@ -17,8 +17,6 @@ int main() {
     std::string text(buff.begin(),buff.end());
     std::transform(text.begin(),text.end(),text.begin(),::toupper); //avevo messo begin() invece di end()... 
 
-//    std::cout << "Maiuscola: " << text << std::endl;
-
     npl::buffer result(text.begin(),text.end());
 
     sock.sendto(result, client);
