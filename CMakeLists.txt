@@ -22,6 +22,7 @@ add_executable(UDPclt src/UDPclt.cpp)
 add_executable(TCPclt src/TCPclt.cpp)
 add_executable(TCPnaive src/TCPsrvnaive.cpp)
 add_executable(TCPsrv src/TCPsrv.cpp)
+add_executable(TCPmt src/TCPmt.cpp)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
