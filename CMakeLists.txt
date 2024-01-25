@@ -19,6 +19,7 @@ enable_testing()
 
 add_executable(UDPsrv src/UDPsrv.cpp)
 add_executable(UDPclt src/UDPclt.cpp)
+add_executable(TCPnaive src/TCPsrvnaive.cpp)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
