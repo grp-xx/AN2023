@@ -13,13 +13,15 @@ int main(int argc, char* argv[])
     npl::sockaddress<AF_INET> srvaddr(argv[1],std::atoi(argv[2]));
     npl::socket<AF_INET,SOCK_STREAM> sock;
 
+    sock.connect(srvaddr);
+
+
     std::string line;
 
     std::getline(std::cin, line);
 
     npl::buffer buff(line.begin(),line.end());
 
-    sock.connect(srvaddr);
 
     sock.write(buff);
 
